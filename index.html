@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Campominato</title>
+</head>
+<body>
+    <div class="mainBox">
+        <header class="flex justifySpaceBetween alignItemCenter">
+            <div class="flex alignItemCenter">
+                <img src="./img/Logo.png" alt="Logo">
+                <h1>Campo Minato</h1>
+            </div>
+            <div class="flex alignItemCenter">
+                <select id="level">
+                    <option value="49">Facile</option>
+                    <option value="81">Medio</option>
+                    <option value="100">Difficile</option>
+                </select>
+                <button id="startGame">Play</button>
+            </div>
+        </header>
+        <main>
+            <div id="grid" class="secondBox flex flexWrap">
+            </div>
+        </main>
+        <footer class="flex alignItemCenter">
+            <p>Made width &#10084; by <a href="https://boolean.careers/ " target="_blank">Boolean</a></p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
