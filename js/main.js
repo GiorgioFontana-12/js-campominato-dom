@@ -23,10 +23,11 @@ play.addEventListener("click", function() {
 })
 let randomNumberArray = []
 while (randomNumberArray.length < 16) {
-    let randomNumber = Math.random() * (1 - 16) + 1
+    let randomNumber = Math.floor(Math.random() * 16) + 1;
     if (randomNumberArray.includes(randomNumber)) {
     }else{
         randomNumberArray.push(randomNumber)
     }
+    console.log (randomNumber)
     console.log (randomNumberArray)
 }
