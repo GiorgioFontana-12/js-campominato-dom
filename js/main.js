@@ -19,4 +19,14 @@ const difficulty = document.getElementById("level")
 play.addEventListener("click", function() {
     var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
     sqareGen(`PiecesX${difficultySelected}` , difficultySelected)
+    
 })
+let randomNumberArray = []
+while (randomNumberArray.length < 16) {
+    let randomNumber = Math.random() * (1 - 16) + 1
+    if (randomNumberArray.includes(randomNumber)) {
+    }else{
+        randomNumberArray.push(randomNumber)
+    }
+    console.log (randomNumberArray)
+}
